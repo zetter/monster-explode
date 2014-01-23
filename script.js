@@ -119,7 +119,7 @@ var levelCompleteCheck = function() {
 $(document).ready(function() {
   startScreen();
   setupStartButtons();
-  $('.monster').click(function(e) {
+  $('.monster').on('click tap', function(e) {
     e.preventDefault();
 	//stop current monster animation
     $(this).stop(true);  
